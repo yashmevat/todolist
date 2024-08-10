@@ -68,7 +68,7 @@ list.addEventListener("click", function (e) {
     if(e.target.parentNode.previousElementSibling.style.textDecoration=="line-through")
     {
         e.target.parentNode.previousElementSibling.style.textDecoration="none";
-        e.target.parentNode.previousElementSibling.style.color="black";
+        e.target.parentNode.previousElementSibling.style.color="green";
 
     }
     else{
