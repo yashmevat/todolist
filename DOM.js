@@ -65,9 +65,16 @@ list.addEventListener("click", function (e) {
         list.style.transition = "all 0.3s linear;"
     }
     else if (e.target.innerHTML === "done") {
-        e.target.parentNode.previousElementSibling.style.textDecoration = "line-through";
+    if(e.target.parentNode.previousElementSibling.style.textDecoration=="line-through")
+    {
+        e.target.parentNode.previousElementSibling.style.textDecoration="none";
+        e.target.parentNode.previousElementSibling.style.color="white";
 
-        e.target.parentNode.previousElementSibling.style.color = "red";
+    }
+    else{
+        e.target.parentNode.previousElementSibling.style.textDecoration="line-through";
+        e.target.parentNode.previousElementSibling.style.color="red";
+    }
     }
     else if(e.target.innerHTML === 'Update'){
          var itemtoupdate =  e.target.parentNode.parentNode.children[0]
