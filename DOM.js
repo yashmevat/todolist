@@ -11,7 +11,7 @@ var listcontentafterdelete = ""
 list.innerHTML = JSON.parse(localStorage.getItem('list'));
 myform.addEventListener("submit", function (e) {
     e.preventDefault()
-    if (`${document.getElementById("data").value.trim()}` !== "") {
+     if(`${document.getElementById("data").value.trim()}`!==""){
         listcontent = `<li>
         <div class="text">${document.getElementById("data").value}</div>
         <div class="buttons">
