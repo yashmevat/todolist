@@ -81,7 +81,7 @@ list.addEventListener("click", function (e) {
          var itemtoupdate =  e.target.parentNode.parentNode.children[0]
          updateform.addEventListener('click',function(e1){
             e1.preventDefault();
-            if(updatedata.value!=="")
+            if(updatedata.value.trim()!=="")
             {
                 itemtoupdate.innerHTML=updatedata.value
                 itemtoupdate=""
